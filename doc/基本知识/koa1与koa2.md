@@ -45,13 +45,8 @@ const gzip = require('koa-gzip');
 // generator 中间件在 koa v2 中需要用 koa-convert 封装一下才能使用
 const convert = require('koa-convert');
 
-// 作者说明，需要把 gzip 放在第一个中间件位置
 app.use(convert(gzip()));
 ```
-
-
-
-
 
 
 

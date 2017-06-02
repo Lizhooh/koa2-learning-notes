@@ -19,12 +19,6 @@
   * 解析数据 √
     * [get](./doc/功能模块/解析数据/get.md)
     * [post](./doc/功能模块/解析数据/post.md)
-  * 日志信息
-    * 自定义日志信息中间件
-    * koa-logger
-  * 解析数据
-    * get
-    * post
   * 同源策略与跨域
     * jsonp
     * cors

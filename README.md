@@ -1,3 +1,4 @@
-# My Awesome Book
+### koa2-learning-notes
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+《我的 Koa2 学习笔记》（koa2-learning-notes）是我学习 Koa2 中记录的学习笔记（持续更新），以 Express 的开发经验，来快速学习 Koa2。
+

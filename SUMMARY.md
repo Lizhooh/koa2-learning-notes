@@ -9,7 +9,7 @@
 * 中间件 √
   * [中间件执行顺序](./doc/中间件/中间件执行顺序.md)
   * [自定义中间件](./doc/中间件/自定义中间件.md)
-* 功能模块
+* [功能模块](gong-neng-mo-kuai.md)
   * 路由 √
     * 自定义路由中间件
     * koa-router
@@ -50,6 +50,7 @@
   * 攻击防御
     * xss
   * restful api
+    * rest 设计
   * socket.io \(websocket\)
     * client
     * server
@@ -58,9 +59,11 @@
   * 爬虫
     * cheerio
     * jsdom
-* 部署
+* [测试](ce-shi.md)
+  * jest
+* [部署](bu-shu.md)
   * nvm
   * pm2
-* 测试
-  * jest
+
+
 

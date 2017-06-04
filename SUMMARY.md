@@ -19,7 +19,7 @@
   * 解析数据 √
     * [get](./doc/功能模块/解析数据/get.md)
     * [post](./doc/功能模块/解析数据/post.md)
-  * 同源策略与跨域
+  * 同源策略与跨域 √
     * jsonp
     * cors
   * 视图引擎
@@ -53,9 +53,9 @@
   * 爬虫
     * cheerio
     * jsdom
-* [测试](ce-shi.md)
+* 测试
   * jest
-* [部署](bu-shu.md)
+* 部署
   * nvm
   * pm2
 

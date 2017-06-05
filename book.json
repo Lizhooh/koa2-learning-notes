@@ -1,8 +1,0 @@
-{
-    "title": "koa2-learning-notes",
-    "author" : "lizhooh",
-    "description": "《我的 Koa2 学习笔记》（koa2-learning-notes）是我学习 Koa2 中记录的学习笔记（持续更新），以 Express 的学习经验，来快速学习 Koa2。",
-    "language": "zh-hans",
-    "gitbook" : ">=3.2.2",
-    "root": "."
-}

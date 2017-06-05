@@ -33,6 +33,24 @@ npm install ejs
 - `%>` 普通的结束标签
 - `-%>` Trim-mode ('newline slurp') 标签, 移除随后的换行符
 
+### Koa2 use Ejs
+
+before:
+
+```bash
+npm install --save koa-views
+npm install --save ejs
+```
+
+after:
+
+```js
+// 加载模板引擎
+app.use(views(path.join(__dirname, './view'), {
+    extension: 'ejs'
+}))
+```
+
 ### 基本使用
 
 ```html
@@ -105,9 +123,11 @@ app.get("/", async crx => {
 ```
 
 ```html
+<!DOCTYPE html>
 <html>
 <head>
-<title>my ejs template</title>
+    <meta charset="UTF-8">
+    <title>Document</title>
 </head>
 <body>
     <p>Hi <%= name %></p>
@@ -118,9 +138,11 @@ app.get("/", async crx => {
 渲染出的结果：
 
 ```html
+<!DOCTYPE html>
 <html>
 <head>
-<title>my ejs template</title>
+    <meta charset="UTF-8">
+    <title>Document</title>
 </head>
 <body>
     <p>Hi xiaoming</p>

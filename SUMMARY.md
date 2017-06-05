@@ -23,8 +23,8 @@
     * [jsonp](./doc/功能模块/同源策略与跨域/jsonp.md)
     * [cors](./doc/功能模块/同源策略与跨域/cors.md)
   * 视图引擎
-    * koa-views
-    * ejs
+    * [koa-views](./doc/功能模块/视图引擎/koa-views.md)
+    * [ejs](./doc/功能模块/视图引擎/ejs.md)
     * artTemplate （腾讯开源的模版引擎）
   * 静态资源
     * koa-static

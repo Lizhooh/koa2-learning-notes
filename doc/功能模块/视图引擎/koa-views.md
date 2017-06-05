@@ -17,7 +17,7 @@ npm install --save ejs
 ```js
 ├── package.json
 ├── index.js
-└── view
+└── views
     └── index.ejs
 ```
 
@@ -30,7 +30,7 @@ const path = require('path')
 const app = new Koa()
 
 // 加载模板引擎
-app.use(views(path.join(__dirname, './view'), {
+app.use(views(path.join(__dirname, './views'), {
     extension: 'ejs'
 }))
 

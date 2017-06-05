@@ -120,6 +120,11 @@ app.get("/", async crx => {
         name: 'xiaoming'
     });
 });
+
+// 加载模板引擎
+app.use(views(path.join(__dirname, './views'), {
+    extension: 'ejs'
+}))
 ```
 
 ```html

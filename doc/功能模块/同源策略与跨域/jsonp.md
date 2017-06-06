@@ -1,11 +1,11 @@
 
-### Jsonp
+## Jsonp
 一个众所周知的问题，Ajax直接请求普通文件存在跨域无权限访问的问题，甭管你是静态页面、动态网页、web服务、WCF，只要是跨域请求，一律不准。
 不过我们又发现，Web页面上调用js文件时则不受是否跨域的影响（不仅如此，我们还发现凡是拥有`src`这个属性的标签都拥有跨域的能力，比如`<script>、<img>、<iframe>`
 
 Jsonp 就是为了解决这个问题而出现的，使用 Jsonp 需要前后端的配合。
 
-### 原生实现
+## 原生实现
 Jsonp 跨域输出的数据是可执行的`JavaScript`代码，而不是 json 文本
 - ctx 输出的类型应该是`'text/javascript'`
 - ctx 输出的内容为可执行的返回数据`JavaScript`代码字符串
@@ -58,7 +58,7 @@ app.use(jsonp()).use(router.routes());
 
 此时，前端应该使用 jsonp 函数，比如 `$.jsonp()`
 
-### koa-jsonp
+## koa-jsonp
 `koa-jsonp` 是一个 jsonp 中间件。
 
 
@@ -80,5 +80,5 @@ router.get('/user', async ctx => {
 app.use(jsonp()).use(router.routes());
 ```
 
-### 参考资料
+## 参考资料
 > koa-jsonp: https://github.com/kilianc/koa-jsonp

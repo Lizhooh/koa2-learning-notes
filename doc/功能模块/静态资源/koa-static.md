@@ -1,4 +1,4 @@
-### 静态资源
+## 静态资源
 像 Express 一样，Koa2 需要静态资源的中间件。
 
 一个 http 请求访问 web 服务静态资源，一般会经历三个步骤：
@@ -19,7 +19,7 @@ app.get('/public/*', (req, res, next) => {
 
 而在 Koa2 里一般都是选择第三方中间件：`koa-static`
 
-### koa-static
+## koa-static
 `koa-static` 是 koa 里的中间件，类似 express-static
 
 **安装：**
@@ -36,7 +36,7 @@ const static = require('koa-static');
 app.use(static(path.join(__dirname, 'public')));
 ```
 
-### koa-static-cache
+## koa-static-cache
 `koa-static-cache` 是一个静态资源缓存的中间件，与`koa-static`有一定的差别。
 
 与`koa-static`的差别：
@@ -64,6 +64,7 @@ app.use(staticCache(
 ))
 ```
 
-### 参考资料
+## 参考资料
 > koa-static: https://github.com/koajs/static
 > koa-static-cache: https://github.com/koajs/static-cache
+

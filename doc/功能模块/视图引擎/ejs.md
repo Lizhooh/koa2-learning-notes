@@ -1,5 +1,5 @@
 
-### Ejs
+## Ejs
 “E” 的含义是 “有效” 的意思。EJS 是一个简单的模板语言，可以让你使用原生 JavaScript 生成 HTML 标记。
 没有关于如何组织内容的语法规则，也没有循环和控制流的重载，只是使用原生的 JavaScript。
 
@@ -10,7 +10,7 @@
 npm install ejs
 ```
 
-### 特性
+## 特性
 
 - `<% %>` 用于控制流
 - `<%= %>` 用于转义的输出
@@ -23,7 +23,7 @@ npm install ejs
 - 模板的静态缓存
 - 与 Express 视图系统兼容
 
-### 标签
+## 标签
 
 - `<% 'Scriptlet'` 标签, 用于控制流，没有输出
 - `<%=` 向模板输出值（带有转义）
@@ -33,7 +33,7 @@ npm install ejs
 - `%>` 普通的结束标签
 - `-%>` Trim-mode ('newline slurp') 标签, 移除随后的换行符
 
-### Koa2 use Ejs
+## Koa2 use Ejs
 
 before:
 
@@ -51,7 +51,7 @@ app.use(views(path.join(__dirname, './view'), {
 }))
 ```
 
-### 基本使用
+## 基本使用
 
 ```html
 <% if (user) { %>
@@ -111,7 +111,7 @@ app.use(views(path.join(__dirname, './view'), {
 <%- include('footer')  %>
 ```
 
-### 例子
+## 例子
 
 
 ```js

@@ -1,5 +1,5 @@
 
-### Koa2 Router
+## Koa2 Router
 与 Express 一样，Koa2 也有路由，同样的保持了整洁的 API。
 
 > 先来看看 Express 的路由
@@ -34,13 +34,13 @@ app.use(router.routes());
 
 最后发现，他们之间基本没什么差异。
 
-### 安装
+## 安装
 
 ```js
 npm install --save koa-router@latest
 ```
 
-### 简单示例
+## 简单示例
 
 ```js
 const koa = require('koa2');
@@ -71,7 +71,7 @@ app.listen(3333, _ => {
 });
 ```
 
-### 模块化
+## 模块化
 > 在 Express 可以这样进行模块化路由：
 
 ```js
@@ -132,7 +132,7 @@ app.listen(3333, _ => {
 ```
 
 
-### 前缀 prefixes
+## 前缀 prefixes
 为 url 添前缀，从而减少点代码：
 
 ```js
@@ -144,7 +144,7 @@ router.get('/',    ...); // responds to "/users"
 router.get('/:id', ...); // responds to "/users/:id"
 ```
 
-### 参数 parameters
+## 参数 parameters
 
 ```js
 router.get('/:category/:title', async (ctx, next) => {
@@ -153,7 +153,7 @@ router.get('/:category/:title', async (ctx, next) => {
 });
 ```
 
-### 重定向 redirect
+## 重定向 redirect
 
 ```js
 // 接受所有类型， get, post, put, delete ...
@@ -167,5 +167,5 @@ app.use(router.routes())
    .use(router.allowedMethods());
 ```
 
-### 参考资料
+## 参考资料
 > koa-router: https://github.com/alexmingoia/koa-router

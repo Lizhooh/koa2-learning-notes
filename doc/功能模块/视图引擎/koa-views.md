@@ -1,8 +1,8 @@
 
-### View
+## View
 传统的后端开发都会有一个视图引擎，当然 koa2 也不例外。
 
-### koa-views
+## koa-views
 `koa-views`是一个视图引擎的中间件，提供类似`express.views`的功能。
 
 **安装：**
@@ -43,6 +43,6 @@ app.use(async ctx => {
 app.listen(3000);
 ```
 
-### 参考资料
+## 参考资料
 > koa-views: https://github.com/queckezz/koa-views
 

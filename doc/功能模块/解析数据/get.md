@@ -1,6 +1,6 @@
 
 
-### GET 请求
+## GET 请求
 在`koa2`中，获取 GET 请求数据源头是 koa 中 request 对象中的 query 方法或 querystring 方法。
 
 koa 有一些简化的 API，所以`ctx.query`与`ctx.request.query`是一样的
@@ -24,7 +24,7 @@ koa 有一些简化的 API，所以`ctx.query`与`ctx.request.query`是一样的
 
 对于查询字符串的解析，可以使用 Nodejs 的原生模块`querystring`
 
-### 示例
+## 示例
 
 ```js
 router.get('/', async ctx => {

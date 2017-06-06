@@ -1,5 +1,5 @@
 
-### art-template
+## art-template
 art-template 是一个渲染性能出众模板引擎，无论在 NodeJS 还是在浏览器中都可以运行。
 
 **特性：**
@@ -21,7 +21,7 @@ art-template 是一个渲染性能出众模板引擎，无论在 NodeJS 还是�
 npm install --save art-template@latest
 ```
 
-### Koa2 use art-template
+## Koa2 use art-template
 
  **安装：**
 
@@ -66,7 +66,7 @@ app.listen(8080);
 </html>
  ```
 
-### 基本使用
+## 基本使用
 使用方式有 simple 与 native 两种，simple 的方式与 vuejs 类似，而 native 方式与 ejs 相似。
 下面是 simple 的语法：
 
@@ -134,5 +134,5 @@ template.helper('dateFormat', function (date, format) {
 ```
 
 
-### 参考资料
+## 参考资料
 > https://aui.github.io/art-template/

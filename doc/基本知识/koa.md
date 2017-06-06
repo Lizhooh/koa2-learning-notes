@@ -1,12 +1,12 @@
 
 
-### koa
+## koa
 koa 是由 Express 原班人马打造的，致力于成为一个更小、更富有表现力、更健壮的 Web 框架。
 
 Koa 包含了像 `content-negotiation`（内容协商）、`cache freshness`（缓存刷新）、`proxy support`（代理支持）和 `redirection`（重定向）等常用任务方法。
 与提供庞大的函数支持不同，Koa 只包含很小的一部分，因为 Koa 并不绑定任何中间件。
 
-### hello world
+## hello world
 下面是 koa2 的 hello world，里面有很多与 Express 相似的地方，包括 app.use，app.listen 等。
 
 ```js
@@ -20,7 +20,7 @@ app.use(async ctx => {
 app.listen(3000);
 ```
 
-### Context（上下文）
+## Context（上下文）
 和 Express 不同， Koa 并没有封装更多了功能。
 Koa Context 将 node 的 request 和 response 对象封装在一个单独的对象里面，其为编写 web 应用和 API 提供了很多有用的方法。
 
@@ -92,16 +92,16 @@ Koa 不支持 直接调用底层 res 进行响应处理。请避免使用以下 
 - ctx.etag =
 
 
-### 安装
+## 安装
 安装 koa2
 
 ```bash
 npm install --save koa@2
 ```
 
-### 结束
+## 结束
 好了，到了这里 koa 基本知识，就只有这些了。Koa 只封装了 req 与 res 对象，把更多的留给了第三方中间件去处理，这也是 Koa 的魅力所在。
 
 
-### 参考资料
+## 参考资料
 > http://koajs.com/

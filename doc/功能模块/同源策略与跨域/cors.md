@@ -1,5 +1,5 @@
 
-### 跨域请求
+## 跨域请求
 
 开启跨域请求是指开启 cors，而不是 jsonp。
 在 Express 上开启跨域请求：
@@ -25,7 +25,7 @@ router.all('/*', cors());
 
 而在 Koa 里可以使用原生或`koa-cors`
 
-### 原生
+## 原生
 
 其实和上面一样，下面直接把它封装成中间件。
 
@@ -40,7 +40,7 @@ module.exprots = asnyc (ctx, next) => {
 ```
 
 
-### koa2-cors
+## koa2-cors
 `koa2-cors`是 koa2 的一个中间件，其实里面的代码也和上面的差不多。
 
 **安装：**
@@ -58,6 +58,6 @@ const cors = require('koa2-cors');
 app.use('/api/*', cors());
 ```
 
-### 参考资料
+## 参考资料
 > koa2-cors: https://github.com/zadzbw/koa2-cors
 

@@ -29,9 +29,9 @@
   * 静态资源 √
     * [koa-static](./doc/功能模块/静态资源/koa-static.md)
   * 文件上传
-    * [前端：同步与异步](./doc/功能模块/静态资源/前端：同步与异步.md)
-    * busboy
-    * formidable
+    * [前端：同步与异步](./doc/功能模块/文件上传/前端：同步与异步.md)
+    * [busboy](./doc/功能模块/文件上传/busboy.md)
+    * [formidable](./doc/功能模块/文件上传/formidable.md)
   * 会话管理
     * cookie
     * session

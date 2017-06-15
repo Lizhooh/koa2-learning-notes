@@ -52,12 +52,10 @@ const app = new koa();
 router.get('/hello/:name', async (ctx, next) => {
     const name = ctx.params.name;
     ctx.body = `<h1>Hello, ${name}!</h1>`;
-    await next();
 });
 
 router.get('/', async (ctx, next) => {
     ctx.body = '<h1>Index</h1>';
-    await next();
 });
 
 // add router middleware:

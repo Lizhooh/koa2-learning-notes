@@ -45,7 +45,7 @@ render(app, {
 });
 
 app.use(async function (ctx) {
-    await ctx.render('index', {             // views/index.html
+    await ctx.render('index', {              // views/index.html
         name: '小明'
     });
 });
@@ -53,7 +53,7 @@ app.use(async function (ctx) {
 app.listen(8080);
 ```
 
- ```html
+```html
 <!DOCTYPE html>
 <html>
 <head>

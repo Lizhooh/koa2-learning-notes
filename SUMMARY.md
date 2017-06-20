@@ -28,13 +28,13 @@
     * [artTemplate（腾讯开源的模版引擎）](./doc/功能模块/视图引擎/artTemplate.md)
   * 静态资源 √
     * [koa-static](./doc/功能模块/静态资源/koa-static.md)
-  * 文件上传
+  * 文件上传 √
     * [前端：同步与异步](./doc/功能模块/文件上传/前端：同步与异步.md)
     * [busboy](./doc/功能模块/文件上传/busboy.md)
     * [formidable](./doc/功能模块/文件上传/formidable.md)
   * 会话管理
     * [cookie](./doc/功能模块/会话管理/cookie.md)
-    * session
+    * [session](./doc/功能模块/会话管理/session.md)
     * token
   * 数据持久化
     * 本地存储
@@ -43,6 +43,7 @@
     * redis
   * 攻击防御
     * xss
+    * sql
   * restful api
     * rest 设计
   * socket.io \(websocket\)

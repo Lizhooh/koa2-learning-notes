@@ -5,5 +5,6 @@
 相关：
 - @By Lizhooh http://me.lizhooh.com/
 - @Github https://github.com/Lizhooh/koa2-learning-notes/
+- @Gitbook https://www.gitbook.com/book/lizhooh/koa2-learning-notes/details
 
 

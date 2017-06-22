@@ -1,7 +1,7 @@
 
 ## Jsonp
-一个众所周知的问题，Ajax直接请求普通文件存在跨域无权限访问的问题，甭管你是静态页面、动态网页、web服务、WCF，只要是跨域请求，一律不准。
-不过我们又发现，Web页面上调用js文件时则不受是否跨域的影响（不仅如此，我们还发现凡是拥有`src`这个属性的标签都拥有跨域的能力，比如`<script>、<img>、<iframe>`
+一个众所周知的问题，Ajax 直接请求普通文件存在跨域无权限访问的问题，甭管你是静态页面、动态网页、web 服务、WCF，只要是跨域请求，一律不准。
+不过我们又发现，Web 页面上调用 js 文件时则不受是否跨域的影响（不仅如此，我们还发现凡是拥有`src`这个属性的标签都拥有跨域的能力，比如`<script>、<img>、<iframe>`
 
 Jsonp 就是为了解决这个问题而出现的，使用 Jsonp 需要前后端的配合。
 
@@ -18,16 +18,16 @@ Jsonp 跨域输出的数据是可执行的`JavaScript`代码，而不是 json �
 
 ```js
 const jsonp = (resData) => {
-    // 获取jsonp的callback
+    // 获取 jsonp 的 callback
     const callbackName = this.query.callback || 'callback'
 
     // jsonp 的 script 字符串，这是套路写法，就是调用回调函数
     const jsonpStr = `;${callbackName}(${JSON.stringify(resData)})`
 
-    // 用text/javascript，让请求支持跨域获取
+    // 用 text/javascript，让请求支持跨域获取
     this.type = 'text/javascript';
 
-    // 输出jsonp字符串
+    // 输出 jsonp 字符串
     this.body = jsonpStr;
 };
 
@@ -53,7 +53,9 @@ router.get('getData', async ctx => {
     })
 });
 
-app.use(jsonp()).use(router.routes());
+app
+    .use(jsonp())
+    .use(router.routes());
 ```
 
 此时，前端应该使用 jsonp 函数，比如 `$.jsonp()`
@@ -77,7 +79,9 @@ router.get('/user', async ctx => {
 	ctx.body = { name: '小明' };  // 直接写 JSON，剩下的交给中间件
 })
 
-app.use(jsonp()).use(router.routes());
+app
+    .use(jsonp())
+    .use(router.routes());
 ```
 
 ## 参考资料

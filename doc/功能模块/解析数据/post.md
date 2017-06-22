@@ -8,7 +8,7 @@
 下面介绍两个中间件： `koa-body`, `koa-bodyparser`
 
 ## koa-body
-`koa-body`全功能 koa boby 解析器中间件，支持 multipart，urlencoded，json 请求主体，提供与 Express bodyParser 相同的功能，提供文件上次功能。
+`koa-body`全功能 koa boby 解析器中间件，支持 multipart，urlencoded，json 请求主体，提供与 Express bodyParser 相同的功能，提供文件上传功能。
 
 **安装：**
 
@@ -49,8 +49,6 @@ npm install koa-bodyparser@2 --save
 ```js
 const bodyparser = require('koa-bodyparser');
 
-app.use(koaBody());
-
 router.get('/', async ctx => {
     const data = ctx.request.body;
 
@@ -67,9 +65,7 @@ app.use(router.routes());
 ## 参考资料
 > koa: http://koa.bootcss.com/
 
-
 > koa-bodyparser: https://github.com/koajs/bodyparser
-
 
 > koa-body: https://github.com/dlau/koa-body
 

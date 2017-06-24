@@ -9,7 +9,7 @@ session 操作一般需要有以下需求：
 ## session 认证
 基于`session`和`cookie`的后端用户认证方法：
 
-- 后端需要维护的一个`stroe`，用来储存`session`的数据（数据库存储，内存缓存）。
+- 后端需要维护的一个`store`，用来储存`session`的数据（数据库存储，内存缓存）。
 
 - 在登录页面输入用户名与密码，单击按钮登录，就会把**用户名**和**密码**传给 API 服务器，服务器通过验证后，就会将当前用户名（唯一 id）加入`session.user`里，并返回登录状态信息。
 
@@ -28,7 +28,7 @@ session 操作一般需要有以下需求：
 const uuid = require('uuid');
 
 // 储存 session 的信息
-const STROE = [];
+const STORE = [];
 
 const session = () => (ctx, next) => {
     const sid = ctx.cookies.get('sid');
@@ -36,8 +36,8 @@ const session = () => (ctx, next) => {
 
     if(sid) {
         // 如果存在 sid 着寻找 session 信息
-        const index = STROE.find(i => i.sid === sid);
-        index >= 0 && (_session = STROE[index]);
+        const index = STORE.find(i => i.sid === sid);
+        index >= 0 && (_session = STORE[index]);
     }
 
     // 把 session 添加到 ctx 里
@@ -50,15 +50,15 @@ const session = () => (ctx, next) => {
             this.sid = sid;
             // 添加到 cookie 里
             ctx.cookies.set('sid', sid);
-            // 添加到 stroe 里
-            STROE.push({ user, sid });
+            // 添加到 store 里
+            STORE.push({ user, sid });
         },
         destroy() {
             // 删除 session 信息
-            const index = STROE.find(i => i.sid === this.sid);
+            const index = STORE.find(i => i.sid === this.sid);
             this.user = null;
             this.sid = null;
-            STROE.splice(index, 1);
+            STORE.splice(index, 1);
         },
     };
     await next();

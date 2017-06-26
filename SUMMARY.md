@@ -41,7 +41,7 @@
   * 数据持久化
     * 本地存储
     * mongodb
-    * mysql
+    * [mysql](./doc/功能模块/数据持久化/mysql.md)
     * redis
   * 攻击防御
     * xss

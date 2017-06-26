@@ -7,6 +7,7 @@
 
 ## 验证方式
 基于 Token 的身份验证方法，主要有几步：
+
 - 客户端使用用户名跟密码请求登录。
 - 服务端收到请求，去验证用户名与密码。
 - 验证成功后，服务端会签发一个 Token，再把这个 Token 发送给客户端。
@@ -32,11 +33,15 @@
 身份验证是依赖于`token`字符串的，如果用户泄露了自己的 URL，那很大程度上`token`也被别人泄漏了。因此不在网络上传输`token`就能在很大程度防止`token`泄漏，不在网络上传输`token`的方案为 URL 签名。
 
 1. 在第一次登录的时候，客户端拿到`token`之后，在本地进行数据缓存。在之后的 API 请求并不需要带上`token`，而上带上`sign`。
+
     比如：
+
     ```js
         sign = md5('test.com/user/info?token=ajdkasjda23123jkh3k21') => eiqowem3m12kkhhisdDSJDd2131das
     ```
+
     于是， API 请求变成这样：
+
     ```js
     test.com/user/info?id=5&sign=eiqowem3m12kkhhisdDSJDd2131das
     ```

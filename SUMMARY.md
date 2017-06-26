@@ -37,6 +37,7 @@
     * [cookie](./doc/功能模块/会话管理/cookie.md)
     * [session](./doc/功能模块/会话管理/session.md)
     * token
+    * OAuth 2.0
   * 数据持久化
     * 本地存储
     * mongodb

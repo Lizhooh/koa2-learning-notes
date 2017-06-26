@@ -1,6 +1,6 @@
 
 ## db-mysql
-MySQL 成为开源世界的主力军是有原因的：它免费提供了与大型商用数据库一样的众多功能。
+MySQL 成为最火的开源关系式数据库是有原因的：它免费提供了与大型商用数据库一样的众多功能。
 在 Nodejs 上连接 MySQL 使用到了一个官方模块 db-mysql。
 
 ![](../../../resource/mysql.jpg)
@@ -36,7 +36,7 @@ db.connect((err) => {
 
 
 ### SQL 查询
-下面示例，使用 SQL 进行查询。
+下面示例，使用 SQL 进行查询。其中 `?` 代表的是占位符的意思。
 
 ```js
 // 创建表
@@ -46,7 +46,7 @@ db.query(''
     + '     name varchar(20) not null,          '
     + '     age tinyint not null,               '
     + '     sex char(4) not null                '
-    + ') Engine=Myisam Default Charset=utf8;    ',
+    + ') Engine=Innodb Default Charset=utf8;    ',
     function(error, packet) {
         if(error) throw error;
         // 创建表成功
@@ -114,7 +114,7 @@ db.query(''
 
 // 调用存储过程
 db.query(
-    'call getStudentAllName()',
+    'Call getStudentAllName()',
     function(error, rows) {
         if(error) throw error;
         // 存储过程输出的内容
@@ -199,9 +199,8 @@ db.query().delete().from('user')
     });
 ```
 
-
 ## mysqljs/mysql
-除了 db-mysql 外，还有一个 mysqljs/mysql
+除了 db-mysql 外，还有一个 mysqljs/mysql，使用基本差不多。
 具体参考：[https://github.com/mysqljs/mysql](https://github.com/mysqljs/mysql)
 
 

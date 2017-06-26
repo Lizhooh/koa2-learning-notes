@@ -3,9 +3,11 @@
 MongoDB 是一个基于分布式文件存储的数据库。由 C++ 语言编写。旨在为 WEB 应用提供可扩展的高性能数据存储解决方案。
 其次 MongoDB 是一个 NOSQL，与 Mysql 这些 SQL 数据库有着不一样的地方。
 
+![](../../../resource/mongodb.jpg)
+
 在 Nodejs 上使用 Mongodb 可以使用官方的模块：`mongodb`，也可以使用第三方优秀的模块：`mongoose`。
 
-关于`mongoose`，请参考官方文档：[http://www.nodeclass.com/api/mongoose.html]http://www.nodeclass.com/api/mongoose.html
+关于`mongoose`，请参考官方文档：http://www.nodeclass.com/api/mongoose.html
 
 **安装：**
 

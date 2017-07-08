@@ -48,9 +48,9 @@
     * sql
   * restful api
     * rest 设计
-  * socket.io \(websocket\)
-    * client
-    * server
+  * socket.io \(websocket\) √
+    * [client](./doc/功能模块/socket.io/client.md)
+    * [server](./doc/功能模块/socket.io/server.md)
   * fetch
     * node-fetch
   * 爬虫

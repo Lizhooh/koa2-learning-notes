@@ -56,7 +56,7 @@ const crypto = require('crypto');
 const SALT = "Don't eat today";
 
 function createToken(id, salt = SALT) {
-    return crypto.createHashI('md5').update(id + salt).digest('hex');
+    return crypto.createHash('md5').update(id + salt).digest('hex');
 }
 ```
 

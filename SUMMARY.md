@@ -33,11 +33,10 @@
     * [前端：同步与异步](./doc/功能模块/文件上传/前端：同步与异步.md)
     * [busboy](./doc/功能模块/文件上传/busboy.md)
     * [formidable](./doc/功能模块/文件上传/formidable.md)
-  * 会话管理
+  * 会话管理 √
     * [cookie](./doc/功能模块/会话管理/cookie.md)
     * [session](./doc/功能模块/会话管理/session.md)
     * [token](./doc/功能模块/会话管理/token.md)
-    * oAuth 2.0
   * 数据持久化
     * 本地存储
     * [mongodb](./doc/功能模块/数据持久化/mongodb.md)

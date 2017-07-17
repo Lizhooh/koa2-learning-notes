@@ -42,13 +42,13 @@ db.connect((err) => {
 
 ```js
 // 创建表
-db.query(''
-    + 'Create Table Student(                    '
-    + '     id smallint not null primary key,   '
-    + '     name varchar(20) not null,          '
-    + '     age tinyint not null,               '
-    + '     sex char(4) not null                '
-    + ') Engine=Innodb Default Charset=utf8;    ',
+db.query(`
+    Create Table Student(
+        id smallint not null primary key,
+        name varchar(20) not null,
+        age tinyint not null,
+        sex char(4) not null
+    ) Engine=Innodb Default Charset=utf8; `,
     function(error, packet) {
         if(error) throw error;
         // 创建表成功
@@ -102,11 +102,11 @@ db.query(
 );
 
 // 创建存储过程
-db.query(''
-    + 'Create Procedure getStudentAllName() '
-    + 'Begin                                '
-    + '     Select s.name From Student As s;'
-    + 'End                                  ',
+db.query(`
+    Create Procedure getStudentAllName()
+    Begin
+        Select s.name From Student As s;
+    End`,
     function(error, packet) {
         if(error) throw error;
         // 存储过程创建成功

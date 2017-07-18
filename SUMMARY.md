@@ -13,7 +13,7 @@
   * 路由 √
     * [自定义路由中间件](./doc/功能模块/路由/自定义路由中间件.md)
     * [koa-router](./doc/功能模块/路由/koa-router.md)
-    * [404 与 500 错误处理](./doc/功能模块/路由/404 与 500 错误处理.md)
+    * [404 与 500 错误处理](./doc/功能模块/路由/404与500错误处理.md)
   * 日志信息 √
     * [自定义日志信息中间件](./doc/功能模块/日志信息/自定义日志信息中间件.md)
     * [koa-logger](./doc/功能模块/日志信息/koa-logger.md)
@@ -38,7 +38,7 @@
     * [session](./doc/功能模块/会话管理/session.md)
     * [token](./doc/功能模块/会话管理/token.md)
   * 数据持久化
-    * 本地存储
+    * [本地存储](./doc/功能模块/数据持久化/本地存储.md)
     * [mongodb](./doc/功能模块/数据持久化/mongodb.md)
     * [mysql](./doc/功能模块/数据持久化/mysql.md)
     * redis
@@ -51,7 +51,8 @@
     * [client](./doc/功能模块/socket.io/client.md)
     * [server](./doc/功能模块/socket.io/server.md)
   * fetch
-    * node-fetch
+    * [node-fetch](./doc/功能模块/fetch/node-fetch.md)
+    * request
   * 爬虫
     * cheerio
     * jsdom

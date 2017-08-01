@@ -63,6 +63,14 @@ db.open((err, db) => {
 });
 ```
 
+注意，注意，现在 mongodb native 提供了 Promise/async/await 的写法，这是一件非常好的事情。
+如果没有回调传递给它，MongoClient连接方法返回一个Promise。
+参考：https://github.com/mongodb/node-mongodb-native/pull/1531
+
+```js
+
+```
+
 ## Mongoose
 当然，官方的 mongodb 驱动可能并不太好用，这时候可以选择更优秀的 mongodb 驱动，比如 Mongoose。
 

@@ -42,9 +42,10 @@
     * [mongodb](./doc/功能模块/数据持久化/mongodb.md)
     * [mysql](./doc/功能模块/数据持久化/mysql.md)
     * [redis](./doc/功能模块/数据持久化/redis.md)
-  * 攻击防御
-    * xss
-    * sql
+  * 攻击与防御
+    * xss 注入攻击与防御
+    * sql 注入攻击与防御
+    * csrf 跨站请求伪造攻击与防御
   * restful api
     * rest 设计
   * socket.io \(websocket\) √
@@ -57,6 +58,7 @@
   * 爬虫
     * cheerio
     * jsdom
+    * 模拟登录
 * 测试
   * jest
 * 部署

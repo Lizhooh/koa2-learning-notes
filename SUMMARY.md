@@ -37,11 +37,11 @@
     * [cookie](./doc/功能模块/会话管理/cookie.md)
     * [session](./doc/功能模块/会话管理/session.md)
     * [token](./doc/功能模块/会话管理/token.md)
-  * 数据持久化
+  * 数据持久化 √
     * [本地存储](./doc/功能模块/数据持久化/本地存储.md)
     * [mongodb](./doc/功能模块/数据持久化/mongodb.md)
     * [mysql](./doc/功能模块/数据持久化/mysql.md)
-    * redis
+    * [redis](./doc/功能模块/数据持久化/redis.md)
   * 攻击防御
     * xss
     * sql
@@ -50,9 +50,10 @@
   * socket.io \(websocket\) √
     * [client](./doc/功能模块/socket.io/client.md)
     * [server](./doc/功能模块/socket.io/server.md)
-  * fetch
+  * http request
     * [node-fetch](./doc/功能模块/fetch/node-fetch.md)
     * request
+    * axios
   * 爬虫
     * cheerio
     * jsdom

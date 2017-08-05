@@ -70,7 +70,7 @@ fetch('http://httpbin.org/post', {
 ```
 
 ### post with form-data
-模拟表单数据
+模拟表单数据，同时还可以文件上传。
 
 ```js
 // 安装 Form Data 模块 （HTML 5 API）
@@ -85,6 +85,47 @@ fetch('http://httpbin.org/post', {
     })
     .then(res => res.json())
     .then(json => console.log(json));
+```
+
+### 文件上传
+使用 fetch 来进行文件上传需要使用到一个 fromData 的库。
+
+
+先是安装 fromData ：
+
+```
+npm install --save form-data
+```
+
+引入：
+
+```js
+const FormData = require('form-data');
+```
+
+```js
+// uri 图片地址，可以是本地路径，也可以是网络地址
+uploadImage(uri) {
+    let formData = new FormData();
+    let file = {
+        uri: uri,               // 类似的 './image/a.jpg'
+        type: 'multipart/form-data',
+        name: 'a.jpg'           // 必须填写，不然会出错
+    };
+
+    formData.append("files", file);  // key
+
+    return fetch('http://127.0.0.1:3000', {
+        method:'POST',
+        headers:{
+            'Content-Type':'multipart/form-data',
+        },
+        body: formData,
+    })
+        .then(res => res.json())
+        .then(json => console.log(json))
+        .catch(err => console.error(err))
+}
 ```
 
 ### buffer

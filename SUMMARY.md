@@ -53,15 +53,18 @@
     * [server](./doc/功能模块/socket.io/server.md)
   * http request
     * [node-fetch](./doc/功能模块/fetch/node-fetch.md)
-    * request
-    * axios
+    * [request](./doc/功能模块/fetch/request.md)
+    * [axios](./doc/功能模块/fetch/axios.md)
   * 爬虫
     * cheerio
     * jsdom
     * 模拟登录
 * 测试
+  * mocha
   * jest
 * 部署
   * nvm
   * pm2
+    * 守护进程
+    * 集群
 

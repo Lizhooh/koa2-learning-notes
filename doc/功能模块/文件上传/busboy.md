@@ -105,6 +105,13 @@ router.post('/file-upload', async ctx => {
 
 ![](../../../resource/20170427111748.png)
 
+
+### async
+如果，觉得回调太烦人了，可以使用 `async-busboy`，它是 busboy 的 async 封装。
+
+更多参考：https://github.com/m4nuC/async-busboy
+
+
 ## 参考资料
 > busboy: https://github.com/mscdex/busboy
 

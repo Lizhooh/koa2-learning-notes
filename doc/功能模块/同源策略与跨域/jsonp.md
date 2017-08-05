@@ -21,7 +21,7 @@ const jsonp = (resData) => {
     // 获取 jsonp 的 callback
     const callbackName = this.query.callback || 'callback'
 
-    // jsonp 的 script 字符串，这是套路写法，就是调用回调函数
+    // jsonp 的 script 字符串，这是套路写法，一个自调用函数（即时函数）
     const jsonpStr = `;${callbackName}(${JSON.stringify(resData)})`
 
     // 用 text/javascript，让请求支持跨域获取
@@ -31,9 +31,9 @@ const jsonp = (resData) => {
     this.body = jsonpStr;
 };
 
-module.exports = () => (ctx, next) => {
-    ctx.jsonp = jsonp.bind(ctx); // 挂载在 ctx 下，就可以使用 this 获取到 ctx
-    next();
+module.exports = () => async (ctx, next) => {
+    ctx.jsonp = jsonp.bind(ctx); // 挂载在 ctx 下，this 指向 ctx
+    await next();
 }
 ```
 
@@ -54,11 +54,11 @@ router.get('getData', async ctx => {
 });
 
 app
-    .use(jsonp())
+    .use(jsonp())           // 使用
     .use(router.routes());
 ```
 
-此时，前端应该使用 jsonp 函数，比如 `$.jsonp()`
+此时，前端应该使用 jsonp 函数，比如 JQuery 的 `$.jsonp()`
 
 ## koa-jsonp
 `koa-jsonp` 是一个 jsonp 中间件。

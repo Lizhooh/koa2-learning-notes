@@ -30,11 +30,11 @@ router.all('/*', cors());
 其实和上面一样，下面直接把它封装成中间件。
 
 ```js
-module.exprots = asnyc (ctx, next) => {
-    ctx.res.header("Access-Control-Allow-Origin", "*");
-    ctx.res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    ctx.res.header("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
-    ctx.res.header("Content-Type", "application/json;charset=utf-8");
+module.exprots = async (ctx, next) => {
+    ctx.header["Access-Control-Allow-Origin"]   = "*";
+    ctx.header["Access-Control-Allow-Headers"]  = "Origin, X-Requested-With, Content-Type, Accept";
+    ctx.header["Access-Control-Allow-Methods"]  = "PUT,POST,GET,DELETE,OPTIONS";
+    ctx.header["Content-Type"]                  = "application/json;charset=utf-8";
     await next();
 });
 ```
@@ -60,4 +60,3 @@ app.use('/api/*', cors());
 
 ## 参考资料
 > koa2-cors: https://github.com/zadzbw/koa2-cors
-

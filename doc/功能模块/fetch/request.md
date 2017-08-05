@@ -1,7 +1,7 @@
 
 
 ## request
-如果你使用过 Python 的 [http://cn.python-requests.org/zh_CN/latest/](Requests)，那么对 Nodejs 的 request.js 肯定不会陌生。
+如果你使用过 Python 的 [requests](http://cn.python-requests.org/zh_CN/latest/)，那么对 Nodejs 的 request.js 肯定不会陌生。
 
 `request.js` 是一个 HTTP 库，提供的简单的 API，简化 HTTP 的相关操作，可以在 Web/React-Native/Nodejs  等支持 javascript 与 xhr 网络接口的环境上使用。
 
@@ -40,9 +40,7 @@ request
         console.log(response.headers['content-type']) // 'image/png'
     });
 
-request.post('http://b.com')
-    .get(')
-
+request.post('http://b.com');
 ```
 
 ### 使用流
@@ -68,7 +66,7 @@ request('http://www.baidu.com/img.png')
 ```
 
 ### 表单
-request 支持 application/x-www-form-urlencoded 和 multipart/form-data 编码的上传。对于 multipart/related 参考 multipartAPI。
+request 支持 application/x-www-form-urlencoded 和 multipart/form-data 编码的上传。
 
 **application/x-www-form-urlencoded (URL-Encoded Forms)：URL-encoded 码格式的数据提交**
 
@@ -130,6 +128,7 @@ form.append('custom_file', fs.createReadStream(__dirname + '/unicycle.jpg'), {fi
 ```js
 request({
     url: 'https://itbilu.com',
+    method: 'GET',
     headers: {
         'User-Agent': 'request'
     }

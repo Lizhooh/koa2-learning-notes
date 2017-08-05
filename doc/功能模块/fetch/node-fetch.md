@@ -72,6 +72,12 @@ fetch('http://httpbin.org/post', {
 ### post with form-data
 模拟表单数据，同时还可以文件上传。
 
+先是安装 fromData ：
+
+```
+npm install --save form-data
+```
+
 ```js
 // 安装 Form Data 模块 （HTML 5 API）
 const FormData = require('form-data');
@@ -87,21 +93,8 @@ fetch('http://httpbin.org/post', {
     .then(json => console.log(json));
 ```
 
-### 文件上传
+### 图片上传
 使用 fetch 来进行文件上传需要使用到一个 fromData 的库。
-
-
-先是安装 fromData ：
-
-```
-npm install --save form-data
-```
-
-引入：
-
-```js
-const FormData = require('form-data');
-```
 
 ```js
 // uri 图片地址，可以是本地路径，也可以是网络地址
@@ -127,6 +120,8 @@ uploadImage(uri) {
         .catch(err => console.error(err))
 }
 ```
+
+高兴的是，这段代码在 Reac-Native 上也可以使用，React-Native 内置了 Fetch 与 FromData。
 
 ### buffer
 buffer() 是 node-fetch 特有的 API，其他的 Fetch 没有这个 API。

@@ -100,8 +100,6 @@ redis.pipeline().get('a').get('b').exec().then(res => {
 });
 ```
 
-**输出：**
-
 可以看出，在 redis 命令行里怎样使用，在这里就怎样使用，API 基本是一致。
 
 ### 连接 Redis

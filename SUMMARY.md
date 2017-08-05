@@ -58,7 +58,6 @@
   * 爬虫
     * cheerio
     * jsdom
-    * 模拟登录
 * 测试
   * mocha
   * jest
@@ -66,5 +65,6 @@
   * nvm
   * pm2
     * 守护进程
+    * 日志
     * 集群
 

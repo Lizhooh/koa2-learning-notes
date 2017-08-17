@@ -56,7 +56,7 @@
     * [request](./doc/功能模块/fetch/request.md)
     * [axios](./doc/功能模块/fetch/axios.md)
   * 爬虫
-    * cheerio
+    * [cheerio](./doc/功能模块/爬虫/cheerio.md)
     * jsdom
 * 测试
   * mocha

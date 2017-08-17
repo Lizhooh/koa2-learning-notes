@@ -37,7 +37,7 @@ app.use(static(path.join(__dirname, 'public')));
 ```
 
 ## koa-static-cache
-`koa-static-cache` 是一个静态资源缓存的中间件，与`koa-static`有一定的差别。
+`koa-static-cache` 是一个静态资源**缓存**的中间件，与`koa-static`有一定的差别。
 
 与`koa-static`的差别：
 - 默认情况下将静态数据存储在内存中，也可以选择存储在磁盘里

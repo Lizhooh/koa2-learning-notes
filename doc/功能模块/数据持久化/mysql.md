@@ -16,7 +16,6 @@ npm install --save db-mysql
 
 ## 连接 MySQL
 连接 MySQL 使用到的一些`db-mysql`提供的接口。
-
 配置连接`MySQL`的信息：
 
 ```js
@@ -35,7 +34,7 @@ db.connect((err) => {
 
 ## MySQL 查询
 `db-mysql`提供原生的 SQL 语句进行查询，也提供了类似 MongoDB 的查询接口。
-
+（node-mysql 提供：`mysql.escape()` 函数来对字符串转义，防止 sql 注入）
 
 ### SQL 查询
 下面示例，使用 SQL 进行查询。其中 `?` 代表的是占位符的意思。

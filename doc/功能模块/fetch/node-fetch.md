@@ -1,7 +1,6 @@
 ## Fetch
-之前在 React.js 上用过 fetch.js。在 React Native 上用过自带的 Fetch 。
+之前在 React 上用过 Fetch。在 React Native 上用过自带的 Fetch 。
 感觉 Fetch 非常好用，它的 API 非常的友好。
-
 而在 Nodejs 上一直都是使用着原生的 HTTP 模块，最后还自己封装了一个。
 不得不说原生的 HTTP 模块的自由度非常灵活，但是每次使用的时候，你都要自己去封装一下，这样显得非常麻烦。
 

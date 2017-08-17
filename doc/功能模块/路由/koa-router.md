@@ -1,6 +1,7 @@
 
 ## Koa2 Router
 与 Express 一样，Koa2 也有路由，同样的保持了整洁的 API。
+（Express 自带路由中间件， Koa2 需要第三方支持）
 
 > 先来看看 Express 的路由
 
@@ -18,7 +19,7 @@ app.get('/hello/:name', (req, res, next) => {
 > 在来看看 Koa2 的路由
 
 ```js
-const router = require('koa-router')();
+const router = new require('koa-router')();
 
 router.get('/', async (ctx, next) => {
     ctx.body = '<h1>Index</h1>';
@@ -43,11 +44,12 @@ npm install --save koa-router@latest
 ## 简单示例
 
 ```js
-const koa = require('koa2');
-const router = require('koa-router')();
+const Koa = require('koa2');
+const Router = require('koa-router');
 const bodyParser = require('koa-bodyparser');
 const colors = require('colors');
-const app = new koa();
+const app = new Koa();
+const router = new Router();
 
 router.get('/hello/:name', async (ctx, next) => {
     const name = ctx.params.name;
@@ -146,8 +148,16 @@ router.get('/:id', ...); // responds to "/users/:id"
 
 ```js
 router.get('/:category/:title', async (ctx, next) => {
-    console.log(this.params);
+    console.log(ctx.params);
     // => { category: 'programming', title: 'how-to-node' }
+});
+```
+
+## get/post query
+
+```js
+router.get('/:category/:title', async (ctx, next) => {
+    console.log(ctx.query);
 });
 ```
 

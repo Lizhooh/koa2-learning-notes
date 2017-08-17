@@ -37,7 +37,7 @@ const Koa = require('koa');
 const render = require('koa-art-template');
 const app = new Koa();
 
-// koa-art-template 默认自带 koa-views 的功能，所有不需要 views 了
+// koa-art-template 默认自带 koa-views 的功能，所以不需要 views 了
 render(app, {
     root: path.join(__dirname, 'views'),     // views 路径
     extname: '.html',

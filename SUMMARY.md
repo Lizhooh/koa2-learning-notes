@@ -62,8 +62,9 @@
   * mocha
   * jest
 * 部署
-  * nvm
+  * [nvm](./doc/部署/nvm.md)
   * pm2
+    * pm2
     * 守护进程
     * 日志
     * 集群

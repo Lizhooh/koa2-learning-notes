@@ -37,7 +37,7 @@
     比如：
 
     ```js
-        sign = md5('test.com/user/info?token=ajdkasjda23123jkh3k21') => eiqowem3m12kkhhisdDSJDd2131das
+    sign = md5('test.com/user/info?token=ajdkasjda23123jkh3k21') => eiqowem3m12kkhhisdDSJDd2131das
     ```
 
     于是， API 请求变成这样：
@@ -47,7 +47,7 @@
     ```
     **这样就不需要附在 URL 上**
 
-## Nodejs 里实现 Token 生成与验证
+## Nodejs 实现 Token 生成与验证
 
 **Token 生成：**
 

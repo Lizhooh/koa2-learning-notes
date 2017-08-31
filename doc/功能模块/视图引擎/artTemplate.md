@@ -81,7 +81,7 @@ app.listen(8080);
 
 **条件表达式：**
 
-```js
+```html
 {{if admin}}
 	<p>admin</p>
 {{else if code > 0}}

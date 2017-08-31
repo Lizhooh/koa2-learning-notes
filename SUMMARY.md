@@ -26,7 +26,7 @@
   * 视图引擎 √
     * [koa-views](./doc/功能模块/视图引擎/koa-views.md)
     * [ejs](./doc/功能模块/视图引擎/ejs.md)
-    * [artTemplate（腾讯开源的模版引擎）](./doc/功能模块/视图引擎/artTemplate.md)
+    * [artTemplate](./doc/功能模块/视图引擎/artTemplate.md)
   * 静态资源 √
     * [koa-static](./doc/功能模块/静态资源/koa-static.md)
   * 文件上传 √

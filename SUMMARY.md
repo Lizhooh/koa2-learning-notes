@@ -51,7 +51,7 @@
   * socket.io \(websocket\) √
     * [client](./doc/功能模块/socket.io/client.md)
     * [server](./doc/功能模块/socket.io/server.md)
-  * http request
+  * http request √
     * [node-fetch](./doc/功能模块/fetch/node-fetch.md)
     * [request](./doc/功能模块/fetch/request.md)
     * [axios](./doc/功能模块/fetch/axios.md)
@@ -64,8 +64,6 @@
 * 部署
   * [nvm](./doc/部署/nvm.md)
   * pm2
-    * pm2
-    * 守护进程
-    * 日志
+    * [基本使用](./doc/部署/pm2/基本使用.md)
     * 集群
 

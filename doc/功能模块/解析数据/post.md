@@ -31,6 +31,24 @@ app.use(koaBody());
 app.use(router.routes());
 ```
 
+koa-body 还能支持文件上传，它的实现依赖于 formidable。
+
+**koa-body 的配置项：**
+
+- patchNode {Boolean} 修补程序请求正文到节点 ctx.req，默认 false
+- patchKoa {Boolean} 修补程序请求正文到 Koa's ctx.request，默认 true
+- jsonLimit {String | Integer} JSON 主体的字节（整数）的限制，默认值 1mb
+- formLimit {String | Integer}表单主体的字节（整数）的限制，默认值 56kb
+- textLimit {String | Integer}文本正文的字节（整数）的限制，默认 56kb
+- encoding {String} 设置传入表单字段的编码，默认值 utf-8
+- multipart {Boolean} 解析 multipart，默认 false
+- urlencoded {Boolean} 解析 urlencoded body，默认 true
+- text {Boolean} 解析文本正文，默认 true
+- json {Boolean} 解析 json，默认 true
+- formidable {Object} 传递给强大的多部分解析器的选项
+- onError {Function} 自定义错误句柄，如果抛出错误，可以自定义响应 - onError（错误，上下文），默认将抛出
+- strict {Boolean} 如果启用，请不要解析 GET，HEAD，DELETE请求，默认 true
+
 ## koa-bodyparser
 `koa-bodyparser` 与 koa-boby 差不多，用法基本一致。
 

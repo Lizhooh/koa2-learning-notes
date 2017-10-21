@@ -59,8 +59,12 @@
     * [cheerio](./doc/功能模块/爬虫/cheerio.md)
     * jsdom
 * 测试
-  * mocha
-  * jest
+  * 单元测试
+    * mocha
+    * jest
+  * 基准测试
+    * [benchmark](./doc/测试/基准测试/benchmark.md)
+  * 压力测试
 * 部署
   * [nvm](./doc/部署/nvm.md)
   * pm2 √

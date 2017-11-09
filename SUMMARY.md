@@ -66,9 +66,9 @@
   * 基准测试
     * [benchmark](./doc/测试/基准测试/benchmark.md)
   * 压力测试
-* 部署
+* 部署 √
   * [nvm](./doc/部署/nvm.md)
-  * pm2 √
+  * pm2
     * [基本使用](./doc/部署/pm2/基本使用.md)
     * [集群](./doc/部署/pm2/集群.md)
 

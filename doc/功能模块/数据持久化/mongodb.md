@@ -72,7 +72,7 @@ db.open((err, db) => {
 ## Mongoose
 当然，官方的 mongodb 驱动可能并不太好用，这时候可以选择更优秀的 mongodb 驱动，比如 Mongoose。
 
-关于 Mongoose 请参考：[学习 Mongoose 的使用](http://me.lizhooh.com/2017/04/08/MongoDB/%E5%AD%A6%E4%B9%A0%20Mongoose%20%E7%9A%84%E4%BD%BF%E7%94%A8%20/)
+关于 Mongoose 请参考：[学习 Mongoose 的使用](http://me.lizhooh.com/2017/04/08/MongoDB/%E5%AD%A6%E4%B9%A0%20Mongoose%20%E7%9A%84%E4%BD%BF%E7%94%A8/)
 
 ## Mongodb 可视化客户端
 

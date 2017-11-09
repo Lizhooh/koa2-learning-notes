@@ -14,9 +14,10 @@
     * [自定义路由中间件](./doc/功能模块/路由/自定义路由中间件.md)
     * [koa-router](./doc/功能模块/路由/koa-router.md)
     * [404 与 500 错误处理](./doc/功能模块/路由/404与500错误处理.md)
-  * 日志信息 √
+  * 日志信息
     * [自定义日志信息中间件](./doc/功能模块/日志信息/自定义日志信息中间件.md)
     * [koa-logger](./doc/功能模块/日志信息/koa-logger.md)
+    * log4.js
   * 解析数据 √
     * [get](./doc/功能模块/解析数据/get.md)
     * [post](./doc/功能模块/解析数据/post.md)
@@ -61,7 +62,7 @@
 * 测试
   * 单元测试
     * mocha
-    * jest
+    * [jest](./doc/测试/单元测试/jest.md)
   * 基准测试
     * [benchmark](./doc/测试/基准测试/benchmark.md)
   * 压力测试

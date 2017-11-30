@@ -85,7 +85,7 @@ function Gzip(path) {
  *  在静态目录里寻找 js 和 css 文件
  * @return{Array} 文件数组
  */
-async function findJsOrCss(staticDir) {
+async function findJsOrCss(staticDir, types = ['js', 'css']) {
     let arr = [];
     // 是文件夹
     if ((await lstat(staticDir)).isDirectory()) {
@@ -93,11 +93,12 @@ async function findJsOrCss(staticDir) {
         // 变量文件夹
         for (let file of files) {
             let _path = path.join(staticDir, file);
+            let re = new RegExp(`\\.(${types.join('|')})$`);
             // 是文件夹则递归
             if ((await lstat(_path)).isDirectory()) {
-                arr = arr.concat(await findJsOrCss(_path));
+                arr = arr.concat(await findJsOrCss(_path, types));
             }
-            else if (/\.(js|css)$/.test(_path)) {
+            else if (re.test(_path)) {
                 arr.push(_path);
             }
         }
@@ -108,7 +109,7 @@ async function findJsOrCss(staticDir) {
 
 // 开始
 console.time('run');
-findJsOrCss(path.join(__dirname, './static'))
+findJsOrCss(path.join(__dirname, './build/static'))
     .then(files => files.forEach(f => Gzip(f)))
     .then(res => {
         console.timeEnd('run');

@@ -21,7 +21,7 @@ npm install --save koa-body@2
 ```js
 const koaBody = require('koa-boby');
 
-router.get('/', async ctx => {
+router.post('/', async ctx => {
     const data = ctx.request.body;
 
     ctx.body = { data };
@@ -63,7 +63,7 @@ npm install koa-bodyparser@2 --save
 ```js
 const bodyparser = require('koa-bodyparser');
 
-router.get('/', async ctx => {
+router.post('/', async ctx => {
     const data = ctx.request.body;
 
     ctx.body = { data };

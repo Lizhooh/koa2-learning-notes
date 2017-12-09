@@ -53,6 +53,8 @@ app.use(async function (ctx) {
 app.listen(8080);
 ```
 
+**html 文件：**
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -61,7 +63,7 @@ app.listen(8080);
     <title>Document</title>
 </head>
 <body>
-    <h2>{{ name }}</h2>
+    <h2>`{{ name }}`</h2>
 </body>
 </html>
  ```

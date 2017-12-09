@@ -16,7 +16,7 @@ app.get('/hello/:name', (req, res, next) => {
 });
 ```
 
-> 在来看看 Koa2 的路由
+> 再来看看 Koa2 的路由
 
 ```js
 const router = new require('koa-router')();
@@ -46,8 +46,6 @@ npm install --save koa-router@latest
 ```js
 const Koa = require('koa2');
 const Router = require('koa-router');
-const bodyParser = require('koa-bodyparser');
-const colors = require('colors');
 const app = new Koa();
 const router = new Router();
 
@@ -60,8 +58,7 @@ router.get('/', async (ctx, next) => {
     ctx.body = '<h1>Index</h1>';
 });
 
-// add router middleware:
-app.use(bodyParser());
+// 中间件
 app.use(router.routes());
 app.listen(3333, _ => {
     console.log(
@@ -70,6 +67,10 @@ app.listen(3333, _ => {
     );
 });
 ```
+
+这时候，你可以访问下面 url，看看效果：
+- http://127.0.0.1:3333/
+- http://127.0.0.1:3333/hello/xiaoming
 
 ## 模块化
 > 在 Express 可以这样进行模块化路由：

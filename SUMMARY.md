@@ -52,10 +52,10 @@
   * socket.io \(websocket\) √
     * [client](./doc/功能模块/socket.io/client.md)
     * [server](./doc/功能模块/socket.io/server.md)
-  * http request √
-    * [node-fetch](./doc/功能模块/fetch/node-fetch.md)
-    * [request](./doc/功能模块/fetch/request.md)
-    * [axios](./doc/功能模块/fetch/axios.md)
+  * 网络请求 √
+    * [node-fetch](./doc/功能模块/网络请求/node-fetch.md)
+    * [request](./doc/功能模块/网络请求/request.md)
+    * [axios](./doc/功能模块/网络请求/axios.md)
   * 爬虫
     * [cheerio](./doc/功能模块/爬虫/cheerio.md)
     * jsdom
@@ -68,6 +68,7 @@
   * 基准测试
     * [benchmark](./doc/测试/基准测试/benchmark.md)
   * 压力测试
+  * 集成测试
 * 部署 √
   * [nvm](./doc/部署/nvm.md)
   * pm2

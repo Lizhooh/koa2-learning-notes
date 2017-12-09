@@ -189,6 +189,37 @@ suite
 })
 ```
 
+## 数组复制
+数组复制，最常用的就是 slice(0)，除了 slice 还有 concat，for，甚至是 ...。
+
+```js
+suite
+    .add('slice', function () {
+        let res = data.slice();
+    })
+    .add('concat', function () {
+        let res = data.concat([]);
+    })
+    .add('for', function () {
+        let res = [];
+        for (let i = 0, len = data.length; i < len; i++) {
+            res[i] = data[i];
+        }
+    })
+    .add('...', function () {
+        let res = [...data];
+    });
+```
+
+基准结果：
+
+```bash
+slice x 395,925 ops/sec ±0.91% (87 runs sampled)
+concat x 675,662 ops/sec ±4.03% (84 runs sampled)
+for x 100,621 ops/sec ±3.68% (82 runs sampled)
+... x 18,616 ops/sec ±0.52% (94 runs sampled)
+```
+
 ## 测试结果排名
 默认，只会列出性能最快的测试项，下面是可以列出测试项的排名。
 **注意：**下面的代码使用了颜色模块：colors。

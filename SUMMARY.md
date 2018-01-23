@@ -59,7 +59,7 @@
   * 爬虫
     * [cheerio](./doc/功能模块/爬虫/cheerio.md)
     * jsdom
-  * 应用配置管理
+  * 应用配置管理 √
     * [node-config](./doc/功能模块/应用配置管理/node-config.md)
 * 测试
   * 单元测试

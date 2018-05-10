@@ -68,6 +68,7 @@
   * 基准测试
     * [benchmark](./doc/测试/基准测试/benchmark.md)
   * 压力测试
+    * [apache ab](./doc/测试/压力测试/apache ab.md)
   * 集成测试
 * 部署 √
   * [nvm](./doc/部署/nvm.md)

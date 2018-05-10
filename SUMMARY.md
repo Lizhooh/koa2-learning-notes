@@ -63,7 +63,6 @@
     * [node-config](./doc/功能模块/应用配置管理/node-config.md)
 * 测试
   * 单元测试
-    * mocha
     * [jest](./doc/测试/单元测试/jest.md)
   * 基准测试
     * [benchmark](./doc/测试/基准测试/benchmark.md)

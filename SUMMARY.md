@@ -18,9 +18,9 @@
     * [自定义日志信息中间件](./doc/功能模块/日志信息/自定义日志信息中间件.md)
     * [koa-logger](./doc/功能模块/日志信息/koa-logger.md)
     * log4.js
-  * 解析数据 √
-    * [get](./doc/功能模块/解析数据/get.md)
-    * [post](./doc/功能模块/解析数据/post.md)
+  * 请求数据 √
+    * [get](./doc/功能模块/请求数据/get.md)
+    * [post](./doc/功能模块/请求数据/post.md)
   * 同源策略与跨域 √
     * [jsonp](./doc/功能模块/同源策略与跨域/jsonp.md)
     * [cors](./doc/功能模块/同源策略与跨域/cors.md)
@@ -67,7 +67,7 @@
   * 基准测试
     * [benchmark](./doc/测试/基准测试/benchmark.md)
   * 压力测试
-    * [apache ab](./doc/测试/压力测试/apache ab.md)
+    * [apache ab](./doc/测试/压力测试/apache-ab.md)
   * 集成测试
 * 部署 √
   * [nvm](./doc/部署/nvm.md)

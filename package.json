@@ -1,0 +1,14 @@
+{
+  "name": "koa2-learning-notes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "lizhooh",
+  "scripts": {
+    "start": "docsify serve",
+    "server": "serve ./"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "docsify": "^4.6.10"
+  }
+}

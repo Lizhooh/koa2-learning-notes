@@ -5,11 +5,10 @@
 
 （未完成，内容会更新）
 
-目录：[koa2-learning-notes](./SUMMARY.md)
+目录：[koa2-learning-notes](./SUMMARY.md) </br>
+阅读：[https://koa2-learning-notes.netlify.com](https://koa2-learning-notes.netlify.com/#/)
 
 相关：
 - @By Lizhooh http://me.lizhooh.com/
 - @Github https://github.com/Lizhooh/koa2-learning-notes/
-- @Gitbook https://gitbook.com/book/lizhooh/koa2-learning-notes/details
-
 

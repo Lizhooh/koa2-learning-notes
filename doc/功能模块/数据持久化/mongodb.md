@@ -66,8 +66,32 @@ db.open((err, db) => {
 注意，注意，现在 mongodb native 提供了 promise/async/await 的写法，这是一件非常好的事情。
 如果没有回调传递给它，MongoClient连接方法返回一个Promise。
 建议使用 promise/async/await 来控制异步流程。
-参考：https://github.com/mongodb/node-mongodb-native/pull/1531
 
+### Promise 
+Mongodb 原生驱动已经支持了 Promise 了。
+
+```js
+const mongodb = require('mongodb');
+
++ async function() {
+    const mongo = await mongodb.MongoClient.connect('mongodb://localhost:27017');
+    const db = await mongo.db('test');
+    const coll = await db.collection('user');
+    const list = await coll.find({ status: 1 }).toArray();  // 如果返回不只一个元素，则需要 toArray。
+
+    // 一般说，后端服务应该保持连接
+    await mongo.close();
+} ()
+```
+
+下面是 CURD 示例。
+
+```js
+const res = await coll.find({ status: 1 }).limit(10).toArray();
+const res = await coll.update({ status: 1, { $set: { status: 2 } } });
+const res = await coll.insertMany([{ status: 1 }, { status: 2 }]);
+const res = await coll.deleteOne({ status: 2 });
+```
 
 ## Mongoose
 当然，官方的 mongodb 驱动可能并不太好用，这时候可以选择更优秀的 mongodb 驱动，比如 Mongoose。

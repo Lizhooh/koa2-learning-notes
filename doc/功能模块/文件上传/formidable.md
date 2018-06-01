@@ -92,4 +92,4 @@ router.post('/file-upload', async ctx => {
 ```
 
 ## 参考资料
-> formidable: https://github.com/felixge/node-formidable
+- https://github.com/felixge/node-formidable

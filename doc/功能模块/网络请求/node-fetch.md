@@ -171,4 +171,4 @@ fetch('https://assets-cdn.github.com/images/modules/logos_page/Octocat.png')
 ```
 
 ## 参考资料
-> github: https://github.com/bitinn/node-fetch
+- https://github.com/bitinn/node-fetch

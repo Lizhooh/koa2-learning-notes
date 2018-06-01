@@ -152,8 +152,5 @@ app.use(staticCache(
 
 ## 参考资料
 
-> koa-static: https://github.com/koajs/static
-
-
-> koa-static-cache: https://github.com/koajs/static-cache
-
+- koa-static: https://github.com/koajs/static
+- koa-static-cache: https://github.com/koajs/static-cache

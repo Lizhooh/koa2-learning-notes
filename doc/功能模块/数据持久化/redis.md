@@ -178,6 +178,4 @@ redis.set('buf', new Buffer('buf'));
 ```
 
 ## 参考资料
-> https://github.com/luin/ioredis
-
-
+- https://github.com/luin/ioredis

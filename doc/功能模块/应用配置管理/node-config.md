@@ -280,4 +280,4 @@ module.exports = {
 ```
 
 ## 参考资料
-> https://github.com/lorenwest/node-config
+- https://github.com/lorenwest/node-config

@@ -6,30 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
-
-    <style>
-        .cover-main {
-            color: #333;
-        }
-        .cover-main p {
-            font-size: 16px;
-        }
-        a[data-id='koa2-learning-notes'] {
-            font-size: 48px;
-        }
-    </style>
+    <link rel="stylesheet" href="public/theme.css">
+    <link rel="stylesheet" href="public/index.css">
+    <link rel="shortcut icon" href="http://me.lizhooh.com/favicon.ico">
 </head>
 <body>
-    <div id="app">加载中...</div>
+    <template id="index_temp">
+        <div class="container">
+            <section>
+                <h1 class="title">《 Koa2 学习笔记 》</h1>
+                <p class="summary">
+                    《 Koa2 学习笔记 》是我学习 Koa2 中记录的学习笔记（持续更新），以 Express 的开发经验，来快速学习 Koa2。
+                     这并不是入门级的书籍，而是需要你具有一定的 Nodejs 基础，ES6 & 7 语法基础，后端开发基础等，才能领会其中的奥义。
+                </p>
+                <div class="links">
+                    <a href="/#/readme">Github</a>
+                    <a href="/#/readme" class="getter-start">开始</a>
+                </div>
+                <div class="author">
+                    <img src="http://me.lizhooh.com/img/my.png" />
+                    <span>Lizooh</span>
+                    <span>著</span>
+                    <span>-</span>
+                    <span>2017 年 · 6 月</span>
+                </div>
+            </section>
+        </div>
+    </template>
+    <div id="index_view"></div>
+    <div id="app"></div>
     <script>
+        function renderIndexView() {
+            var $ = document.querySelector.bind(document);
+            if (window.location.hash === '#/') {
+                $('#index_view').innerHTML = $('#index_temp').innerHTML;
+            }
+            else {
+                $('#index_view').innerHTML = '';
+            }
+        }
+        window.addEventListener('hashchange', renderIndexView);
+        renderIndexView();
+
         window.$docsify = {
-            name: '',
+            name: 'Koa2 学习笔记',
             repo: '',
             loadSidebar: true,
             coverpage: true,
-        }
+            onlyCover: true,
+        };
     </script>
-    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="https://cdn.bootcss.com/docsify/4.6.10/docsify.min.js"></script>
+    <script src="https://cdn.bootcss.com/docsify/4.6.10/plugins/zoom-image.min.js"></script>
 </body>
 </html>

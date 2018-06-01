@@ -112,4 +112,4 @@ app.use(session(CONFIG, app));
 ```
 
 ## 参考资料
-> session:  https://github.com/koajs/session
+- https://github.com/koajs/session

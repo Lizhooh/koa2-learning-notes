@@ -87,4 +87,4 @@ fetch('https://github.com')
 ```
 
 ## 参考资料
-> https://github.com/cheeriojs/cheerio
+- https://github.com/cheeriojs/cheerio

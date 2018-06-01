@@ -128,6 +128,5 @@ Socket.io Client 在浏览器的兼容性良好，连 ie6 都支持。实际上�
 ![](../../../resource/20170704175806.png)
 
 ## 参考资料
-> https://socket.io/docs/client-api/
-
-> https://github.com/socketio/socket.io-client
+- https://socket.io/docs/client-api/
+- https://github.com/socketio/socket.io-client

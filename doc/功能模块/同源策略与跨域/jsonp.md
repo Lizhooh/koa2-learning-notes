@@ -85,4 +85,4 @@ app
 ```
 
 ## 参考资料
-> koa-jsonp: https://github.com/kilianc/koa-jsonp
+- https://github.com/kilianc/koa-jsonp

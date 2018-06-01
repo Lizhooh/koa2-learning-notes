@@ -59,4 +59,4 @@ app.use('/api/*', cors());
 ```
 
 ## 参考资料
-> koa2-cors: https://github.com/zadzbw/koa2-cors
+- https://github.com/zadzbw/koa2-cors

@@ -272,4 +272,4 @@ function onConnect(socket) {
 ```
 
 ## 参考资料
-> https://socket.io/docs/
+- https://socket.io/docs/

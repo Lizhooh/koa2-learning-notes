@@ -34,4 +34,4 @@ router.get('/user', async ctx => {
 ```
 
 ## 参考资料
-> koa: http://koa.bootcss.com/
+- http://koa.bootcss.com/

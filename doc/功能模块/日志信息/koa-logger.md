@@ -25,4 +25,4 @@ app.use(logger());
 koa-logger 并不支持把日志输出到文件里，如果想把日志输出到文件里，可以使用 `PM2` 把部署 Nodejs 应用，把标准输出流写进文件里，参考目录 `PM2`。
 
 ## 参考资料
-> https://github.com/koajs/logger
+- https://github.com/koajs/logger

@@ -67,7 +67,7 @@ db.open((err, db) => {
 如果没有回调传递给它，MongoClient连接方法返回一个Promise。
 建议使用 promise/async/await 来控制异步流程。
 
-### Promise 
+### Promise
 Mongodb 原生驱动已经支持了 Promise 了。
 
 ```js
@@ -106,4 +106,4 @@ const res = await coll.deleteOne({ status: 2 });
 
 
 ## 参考资料
-> http://mongodb.github.io/node-mongodb-native/2.2/api/
+- http://mongodb.github.io/node-mongodb-native/2.2/api/

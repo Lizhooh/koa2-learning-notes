@@ -1,4 +1,4 @@
-## 前言
+## JSDom
 `jsdom` 是许多 Web 标准的纯 JavaScript 实现，特别是 WHATWG DOM 和 HTML 标准，用于 Node.js。一般来说，该项目的目标是模拟足够多的 Web 浏览器子集，以便用于测试和挖掘真实世界的 Web 应用程序。
 
 说白，一般我们会使用它来在 Nodejs 上解析 DOM。

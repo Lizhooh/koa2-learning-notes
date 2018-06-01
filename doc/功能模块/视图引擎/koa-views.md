@@ -44,5 +44,4 @@ app.listen(3000);
 ```
 
 ## 参考资料
-> koa-views: https://github.com/queckezz/koa-views
-
+- koa-views: https://github.com/queckezz/koa-views

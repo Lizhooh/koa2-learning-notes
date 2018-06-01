@@ -206,5 +206,4 @@ db.query().delete().from('user')
 
 
 ## 参考资料
-> https://www.npmjs.com/package/db-mysql
-
+- https://www.npmjs.com/package/db-mysql

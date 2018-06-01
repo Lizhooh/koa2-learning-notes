@@ -98,4 +98,3 @@ async function checkSgin(redis, id, url, sign, salt = SALT) {
     return false;
 }
 ```
-

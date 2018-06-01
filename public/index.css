@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: rgba(1, 1, 1, 0.24);
+}
+
+p img {
+    display: block;
+    margin: 0 auto;
+}
+.markdown-section pre {
+    padding: 0 12px;
+}
+.markdown-section pre > code {
+    padding: 12px 0;
+}
+.cover {
+    display: none !important;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #3af;
+    background: url('http://pic1.win4000.com/wallpaper/2018-04-27/5ae2cac00acf4.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.container > section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(1, 1, 1, 0.36);
+    color: #fff;
+    text-shadow: 1px 2px 2px rgba(1, 1, 1, 0.28);
+    box-shadow: 0 0 120px rgba(1, 1, 1, 0.18) inset;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container a {
+    color: #eee;
+    text-decoration: none;
+}
+
+.container .links {
+    padding-top: 50px;
+}
+
+.container .links a {
+    transition: all 0.24s ease-in-out;
+    padding: 0.5em 1.5em;
+    background-color: rgba(1, 1, 1, 0.36);
+    margin: 10px;
+    border-radius: 3px;
+    box-shadow: 1px 2px 3px rgba(1, 1, 1, 0.12);
+}
+
+.container .links a:hover {
+    background-color: rgba(1, 1, 1, 0.64);
+}
+
+.container .links a.getter-start {
+    background-color: #d43;
+}
+
+.container .links a.getter-start:hover {
+    background-color: #e43;
+}
+
+.container .title {
+    font-size: 44px;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.container .summary {
+    max-width: 640px;
+    font-size: 16px;
+    color: #f3f3f3;
+    text-indent: 2em;
+}
+
+.container .author {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.container .author > img {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    margin-right: 3px;
+    box-shadow: 1px 2px 5px rgba(1, 1, 1, 0.12);
+}
+
+.container .author > span {
+    margin-left: 5px;
+    font-size: 16px;
+    text-shadow: 1px 2px 2px rgba(1, 1, 1, 0.36);
+}
+
+@media screen and (max-width: 480px) {
+    .container .title {
+        font-size: 32px;
+    }
+    .container .summary {
+        font-size: 14px;
+    }
+}

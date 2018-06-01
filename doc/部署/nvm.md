@@ -1,8 +1,7 @@
 
-## 前言
+## nvm
 在 Windows 上安装 Nodejs 实在太简单了，这里只介绍使用 nvm 在 Linux 灵活的安装 Nodejs。
 
-## nvm
 `nvm: Node Version Manager`（Node版本管理器），用它可以方便的在机器上安装并维护多个 Node 的版本。
 它是一个很好的工具，当你安装 nodejs 时，它会自动检测你的 CPU 架构，从而安装对应平台的 Nodejs。
 
@@ -62,4 +61,4 @@ npm config set registry https://registry.npmjs.org/
 
 
 ## 参考资料
-> https://github.com/creationix/nvm
+- https://github.com/creationix/nvm

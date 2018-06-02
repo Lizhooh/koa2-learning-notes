@@ -37,6 +37,7 @@
     <div id="app"></div>
     <script>
         function renderIndexView() {
+            window.scrollTo(0, 0);
             var $ = document.querySelector.bind(document);
             if (window.location.hash === '#/') {
                 $('#index_view').innerHTML = $('#index_temp').innerHTML;
@@ -54,9 +55,14 @@
             loadSidebar: true,
             coverpage: true,
             onlyCover: true,
+            pagination: {
+                previousText: '上一节',
+                nextText: '下一节',
+            },
         };
     </script>
     <script src="https://cdn.bootcss.com/docsify/4.6.10/docsify.min.js"></script>
     <script src="https://cdn.bootcss.com/docsify/4.6.10/plugins/zoom-image.min.js"></script>
+    <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
 </body>
 </html>

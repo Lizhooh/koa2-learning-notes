@@ -6,10 +6,18 @@
     background-color: rgba(1, 1, 1, 0.24);
 }
 
-p img {
+p img, img.medium-zoom-image {
     display: block;
     margin: 0 auto;
+    border-radius: 3px;
+    box-shadow: 1px 2px 5px rgba(1, 1, 1, 0.12);
 }
+
+p img[alt = no-shadow] {
+    box-shadow: none;
+}
+
+
 .markdown-section pre {
     padding: 0 12px;
 }

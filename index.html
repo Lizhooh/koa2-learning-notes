@@ -12,26 +12,49 @@
 </head>
 <body>
     <template id="index_temp">
-        <div class="container">
-            <section>
-                <h1 class="title">《 Koa2 学习笔记 》</h1>
-                <p class="summary">
+        <div class="bg"></div>
+        <div class="container">   
+            <div class="left">
+                <div class="logo"></div>
+                <p style="text-align: center; margin: 40px 0 8px">扫一扫，手机上阅读</p>
+                <div class="qrcode"></div>
+
+                <div class="footer">
+                    <a href="/#/readme" class="start">开始阅读</a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="title">Koa2 学习笔记</div>
+                <div class="author-info">
+                    作者：
+                    <img src="http://me.lizhooh.com/img/my.png" class="author-avatar" />
+                    <a href="http://me.lizhooh.com" target="_blank">Lizhooh</a>
+                    <span class="time">2017 年 · 6 月</span>
+                </div>
+                <div class="tags">
+                    <span class="tag" style="margin-left: 0">后端</span>
+                    <span class="tag">Nodejs</span>
+                    <span class="tag">Koa2</span>
+                    <span class="tag">ES6</span>
+                </div>
+                <div class="summary">
                     《 Koa2 学习笔记 》是我学习 Koa2 中记录的学习笔记（持续更新），以 Express 的开发经验，来快速学习 Koa2。
-                     这并不是入门级的书籍，而是需要你具有一定的 Nodejs 基础，ES6 & 7 语法基础，后端开发基础等，才能领会其中的奥义。
-                </p>
-                <div class="links">
-                    <a href="https://github.com/Lizhooh/koa2-learning-notes">Github</a>
-                    <a href="/#/get-start" class="getter-start">开始</a>
+                    这并不是入门级的书籍，而是需要你具有一定的 Nodejs 基础，ES6 & 7 语法基础，后端开发基础等，才能领会其中的奥义。
+                    <div style="margin-top: 8px"></div>
+                    你将了解到：
+                    <ul>
+                        <li>中间件、请求数据、会话管理、数据持久化、应用配置管理、测试、部署等知识。</li>
+                    </ul>
                 </div>
-                <div class="author">
-                    <img src="http://me.lizhooh.com/img/my.png" />
-                    <span>Lizooh</span>
-                    <span>著</span>
-                    <span>-</span>
-                    <span>2017 年 · 6 月</span>
+                <div>
+                    <div class="author-title">关于作者</div>
+                    <div class="author">
+                        Lizhooh，计算机科学与技术专业，目前是前端开发工程师（跨栈开发工程师），参与负责前端模块化、组件化、工程化的架构演进；推进前后端分离，构建 SPA/SSR 化的 Web 应用。对 Web 前端开发，Nodejs/Python 后端开发，混合式移动应用开发，数据挖掘与可视化等技术有着丰富的兴趣。
+                    </div>
                 </div>
-            </section>
+            </div>
         </div>
+        <div style="height: 500px"></div>
     </template>
     <div id="index_view"></div>
     <div id="app"></div>

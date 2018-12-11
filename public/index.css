@@ -195,6 +195,11 @@ li > strong {
     background-color: #fff;
 }
 
+body[data-page = 'README.md'] .sidebar-toggle,
+body[data-page = 'README.md'] .sidebar {
+    display: none;
+}
+
 /* 封面结束 */
 
 @media screen and (max-width: 640px) {
@@ -208,5 +213,11 @@ li > strong {
     .container .right > .footer {
         display: block !important;
     }
+    .container {
+        top: 0;
+        height: 100%;
+    }
+    .bg {
+        display: none;
+    }
 }
-
